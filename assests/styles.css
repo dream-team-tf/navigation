@@ -32,9 +32,10 @@ figure {
 
 header {
 	background: #083776;
-	position: fixed;
+	/*position: fixed;*/
 	width: 100%;
 	top: 0;
+	padding: 8px;
 }
 
 .w-100 {
