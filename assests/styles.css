@@ -73,15 +73,22 @@ header {
 	position: relative;
 }
 
-.fa-search {
-	position: absolute;
-	color: #00000096;
-	right: .5%;
-}
-
 input[type="search"] {
 	padding: 5px;
-	width: 250px;
+	width: 485px;
+	height: 32px;
+	border: none;
+}
+
+.searchContainer button {
+	position: absolute;
+	color: #00000096;
+	height: 30px;
+	border: none;
+	background: #797979;
+	height: 32px;
+	padding: 0;
+	right: 0;
 }
 
 label[for="location"] {
@@ -104,7 +111,8 @@ select, option {
 	background: #1979c3;
 	border-radius: 50%;
 	padding: 6px;
-	margin: 2px;
+	/*margin: 2px;*/
+	margin-right: 20px;
 	width: 32px;
 	height: 32px;
 	font-size: 17px;
@@ -116,7 +124,7 @@ ul {
 	padding: 0;
 	margin-top: 20px;
 	margin-bottom: 0;
-	justify-content: space-around;
+	justify-content: space-between;
 }
 
 li {
