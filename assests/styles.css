@@ -131,6 +131,7 @@ li {
 	list-style: none;
 	cursor: pointer;
 	margin: 10px 18px;
+	text-transform: uppercase;
 }
 
 li:hover,
