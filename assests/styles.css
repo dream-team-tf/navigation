@@ -22,6 +22,11 @@ img {
 	display: flex;
 }
 
+.center {
+	justify-content: center;
+	align-items: center;
+}
+
 .column {
 	flex-direction: column;
 }
@@ -64,6 +69,16 @@ header {
 	justify-content: space-between;
 }
 
+.searchContainer {
+	position: relative;
+}
+
+.fa-search {
+	position: absolute;
+	color: #00000096;
+	right: .5%;
+}
+
 input[type="search"] {
 	padding: 5px;
 	width: 250px;
@@ -71,6 +86,7 @@ input[type="search"] {
 
 label[for="location"] {
 	margin-left: 20px;
+	margin-right: 5px;
 }
 
 select, option {
@@ -82,6 +98,18 @@ select, option {
 	font-size: 23px;
 	padding: 5px;
 	cursor: pointer;
+}
+
+.iconContainer .fas {
+	background: #1979c3;
+	border-radius: 50%;
+	padding: 6px;
+	margin: 2px;
+	width: 32px;
+	height: 32px;
+	font-size: 17px;
+	line-height: 32px;
+	text-align: center;
 }
 
 ul {
