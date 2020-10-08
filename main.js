@@ -10,7 +10,7 @@
 $("#navSearch").click(function () {
 	$(".searchContainer").addClass("open");
 });
-$(document).mouseup(function(e) 
+$(document).click(function(e) 
 {
 	var containerS = $(".searchContainer");
 
@@ -24,7 +24,7 @@ $(document).mouseup(function(e)
 $("#navCart").click(function () {
 	$(".cartContainer").addClass("open");
 });
-$(document).mouseup(function(e) 
+$(document).click(function(e) 
 {
 	var containerC = $(".searchContainer");
 
