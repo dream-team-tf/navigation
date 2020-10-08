@@ -211,14 +211,6 @@ header .cartContainer {
 header .cartContainer.open {
 	left: 0;
 }
-header .cartContainer.open:before {
-	content: '';
-	height: 100vh;
-	position: absolute;
-		top: -80px;
-		left: 0;
-	width: 100vw;
-}
 header .cart-wrapper {
 }
 header .cartContainer article {
