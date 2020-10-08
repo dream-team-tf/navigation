@@ -9,57 +9,67 @@
 	<title>Treadmill Factory</title>
 </head>
 <body>
+	<div id="emptyBlock"></div>
 	
 	<header>
-		<div class="wrapper">
-			<div class="flex">
-				<figure class="logoContainer">
-					<img src="https://d12pfs8rjh6hzb.cloudfront.net/media/logo/stores/2/TF-FF-Simple-logo-2019.png" alt="Treadmill Factory">
-				</figure>
+		<div class="outerContainer w-100">
+			<div class="wrapper">
+				<div class="transition flex">
+					<figure class="logoContainer">
+						<img src="https://d12pfs8rjh6hzb.cloudfront.net/media/logo/stores/2/TF-FF-Simple-logo-2019.png" alt="Treadmill Factory">
+					</figure>
 
-				<div class="flex column ml-35 w-100">
-					<div class="upperContainer flex">
-						<div class="flex center mt-10">
-							<div class="searchContainer">
-								<input type="search" placeholder="search...">
-								<button>
-									<i class="fas fa-search"></i>
-								</button>
+					<div class="innerContent flex column ml-35 w-100 relative">
+						<div class="upperContainer flex">
+							<div class="flex center">
+								<span class="arrowContainer flex">
+									<i class="navButton fas fa-sort-up"></i>
+								</span>
+
+								<div class="searchContainer relative">
+									<input type="search" placeholder="search...">
+									<button>
+										<i class="fas fa-search"></i>
+									</button>
+								</div>
+								
+								<label for="location">
+									<i class="fas fa-map-marker-alt"></i>
+								</label>
+								<!-- <label for="location">Select Location:</label> -->
+								<select name="loction" id="loctions">
+									<option value="Markham">Markham ON</option>
+									<option value="Toronto">Missussauga ON</option>
+									<option value="Barrie">Barrie ON</option>
+									<option value="London">London ON</option>
+									<option value="Calgary">Calgary AB</option>
+								</select>
+							</div>	
+
+							<div class="iconContainer">
+								<i class="fas fa-phone"></i>
+								<i class="fas fa-user-friends"></i>
+								<i class="fas fa-shopping-cart"></i>
 							</div>
-							
-							<label for="location">Select Location:</label>
-							<select name="loction" id="loctions">
-								<option value="Markham">Markham ON</option>
-								<option value="Toronto">Missussauga ON</option>
-								<option value="Barrie">Barrie ON</option>
-								<option value="London">London ON</option>
-								<option value="Calgary">Calgary AB</option>
-							</select>
-						</div>	
-
-						<div class="iconContainer mt-10">
-							<i class="fas fa-phone"></i>
-							<i class="fas fa-user-friends"></i>
-							<i class="fas fa-shopping-cart"></i>
 						</div>
-					</div>
 
-					<nav>
-						<ul class="flex">
-							<li>Cardio</li>
-							<li>Strength Machine</li>
-							<li>Fitness Accessories</li>
-							<li>Strength & Conditioning</li>
-							<li>New</li>
-							<li>Clearance</li>
-						</ul>
-					</nav>
-				</div>
-			</div>	
-		</div>
+						<nav class="flex">
+							<ul class="flex w-100">
+								<li>Cardio</li>
+								<li>Strength Machine</li>
+								<li>Fitness Accessories</li>
+								<li>Strength & Conditioning</li>
+								<li>New</li>
+								<li>Clearance</li>
+							</ul>
+						</nav>
+					</div>
+				</div>	
+			</div>
+		</div>	
 	</header>
 
-	<div class="wrapper">
+	<div id="contentContainer" class="wrapper mt-100">
 		<div>
 			<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur omnis at, dignissimos, nostrum, accusantium fuga nihil totam, similique ex earum optio quis quaerat aperiam sunt atque eveniet officia rerum molestiae!</p>
 		</div>
