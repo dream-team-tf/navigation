@@ -26,11 +26,10 @@ $("#navCart").click(function () {
 });
 $(document).mouseup(function(e) 
 {
-	var containerC = $(".cartContainer");
+	var containerC = $(".searchContainer");
 
 	// if the target of the click isn't the container nor a descendant of the container
-
-	if (booleanValue === true) && (!containerC.is(e.target) && containerC.has(e.target).length === 0) 
+	if (!containerC.is(e.target) && containerC.has(e.target).length === 0) 
 	{
 	$(".cartContainer").removeClass("open");
 	}
