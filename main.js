@@ -1,5 +1,14 @@
 $(document).ready(function() {
 
+	$(window).resize(function() {
+		if($(window).width() <= 500) {
+			$('#body').hide()
+			$('#mobile').show()
+		} else {
+			$('#body').show()
+			$('#mobile').hide()
+		}
+	})
 
 	// scroll function
 	$(window).scroll(function() {
