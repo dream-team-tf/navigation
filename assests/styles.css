@@ -40,7 +40,9 @@ figure {
 	margin: 0;
 }
 
-
+input {
+    -webkit-border-radius:0; 
+}
 
 .w-100 {
 	width: 100%;
