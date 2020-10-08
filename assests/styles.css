@@ -75,7 +75,6 @@ input {
 input[type="search"] {
 	background: #f4f4f4;
 	border: none;
-	border-radius: 0;
 	height: 30px;
 	padding: 7px;
 	width: 100%;
