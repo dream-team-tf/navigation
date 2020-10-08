@@ -73,6 +73,7 @@ figure {
 input[type="search"] {
 	background: #f4f4f4;
 	border: none;
+	height: 30px;
 	padding: 7px;
 	width: 100%;
 }
@@ -232,6 +233,8 @@ header .cartContainer .phoneContainer a {
 	text-decoration: underline;
 }
 header select {
+	background: #fff;
+	border: 1px #083776 solid;
 	margin-top: 10px;
 }
 

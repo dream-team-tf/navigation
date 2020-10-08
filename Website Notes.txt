@@ -3,3 +3,7 @@ Website Notes
 -clickable phone numbers
 -resizes on mobile (see wireframe)
 -hover over nav to see expanded categories
+
+
+-button for nav
+-
