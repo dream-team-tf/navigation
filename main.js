@@ -24,13 +24,15 @@ $(document).click(function(e)
 $("#navCart").click(function () {
 	$(".cartContainer").addClass("open");
 });
+var boxes = $(".cartContainer");
+if (boxes.classList.contains('open')) {
 $(document).click(function(e) 
 {
-	var containerC = $(".searchContainer");
+	var containerC = $(".cartContainer");
 
 	// if the target of the click isn't the container nor a descendant of the container
 	if (!containerC.is(e.target) && containerC.has(e.target).length === 0) 
 	{
 	$(".cartContainer").removeClass("open");
-	}
+	}}
 });
