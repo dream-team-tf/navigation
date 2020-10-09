@@ -13,38 +13,38 @@ $(document).ready(function() {
 	// scroll function
 	$(window).scroll(function() {
 		if(($(window).scrollTop() >= 20) && $(window).width() > 768 ) {
-			$('#headerDesktop header .outerContainer').addClass('#headerDesktop headerTransition');
-			$('#headerDesktop header .innerContent').addClass('#headerDesktop justifyCenter');
-			$('#headerDesktop .logo').addClass('#headerDesktop shrinkLogo');
-			$('#headerDesktop .arrowContainer').addClass('#headerDesktop showArrowContainer');
+			$('header .outerContainer').addClass('headerTransition');
+			$('header .innerContent').addClass('justifyCenter');
+			$('.logo').addClass('shrinkLogo');
+			$('.arrowContainer').addClass('showArrowContainer');
 
 			// header hover over function
-			$('#headerDesktop header .outerContainer').on('mouseleave', function() {
-					$('#headerDesktop nav').removeClass('#headerDesktop openNav showNav');
+			$('header .outerContainer').on('mouseleave', function() {
+					$('nav').removeClass('openNav showNav');
 			});
 
-			if($('#headerDesktop nav').hasClass('#headerDesktop openNav') == false) {
-				$('#headerDesktop nav').removeClass('#headerDesktop showNav');
-				$('#headerDesktop nav').addClass('#headerDesktop hideNav');
+			if($('nav').hasClass('openNav') == false) {
+				$('nav').removeClass('showNav');
+				$('nav').addClass('hideNav');
 
 
 			}
 
 
 		} else {
-			$('#headerDesktop header .outerContainer').removeClass('#headerDesktop headerTransition');
-			$('#headerDesktop header .innerContent').removeClass('#headerDesktop justifyCenter');
-			$('#headerDesktop .logo').removeClass('#headerDesktop shrinkLogo');
-			$('#headerDesktop .arrowContainer').removeClass('#headerDesktop showArrowContainer');
-			$('#headerDesktop nav').removeClass('#headerDesktop openNav showNav hideNav')
+			$('header .outerContainer').removeClass('headerTransition');
+			$('header .innerContent').removeClass('justifyCenter');
+			$('.logo').removeClass('shrinkLogo');
+			$('.arrowContainer').removeClass('showArrowContainer');
+			$('nav').removeClass('openNav showNav hideNav')
 			
 			// header hover over function
-			$('#headerDesktop header .outerContainer').on('mouseenter', function() {
-				$('#headerDesktop nav').addClass('#headerDesktop openNav showNav');
+			$('header .outerContainer').on('mouseenter', function() {
+				$('nav').addClass('openNav showNav');
 			});
 
-			if( $('#headerDesktop nav').hasClass('#headerDesktop openNav') ) {		
-				$('#headerDesktop nav').addClass('#headerDesktop showNav');
+			if( $('nav').hasClass('openNav') ) {		
+				$('nav').addClass('showNav');
 
 
 			}
@@ -54,9 +54,9 @@ $(document).ready(function() {
 
 
 	// arrow button click function
-	$('#headerDesktop .navButton').on('click', function() {
+	$('.navButton').on('click', function() {
 		if($(window).scrollTop() >= 20 && $(window).width() > 768) {
-			$('#headerDesktop nav').toggleClass('#headerDesktop openNav showNav');
+			$('nav').toggleClass('openNav showNav');
 		}
 	});
 

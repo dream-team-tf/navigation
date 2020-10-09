@@ -7,30 +7,30 @@
   }
 });*/
 
-$("#headerMobile #navSearch").click(function () {
-	$("#headerMobile .searchContainer").addClass("#headerMobile open");
+$("#navSearch").click(function () {
+	$(".searchContainer").addClass("open");
 });
 $(document).mouseup(function(e) 
 {
-	var containerS = $("#headerMobile .searchContainer");
+	var containerS = $(".searchContainer");
 
 	// if the target of the click isn't the container nor a descendant of the container
 	if (!containerS.is(e.target) && containerS.has(e.target).length === 0) 
 	{
-	$("#headerMobile .searchContainer").removeClass("#headerMobile open");
+	$(".searchContainer").removeClass("open");
 	}
 });
 
-$("#headerMobile #navCart").click(function () {
-	$("#headerMobile .cartContainer").addClass("#headerMobile open");
+$("#navCart").click(function () {
+	$(".cartContainer").addClass("open");
 });
 $(document).mouseup(function(e) 
 {
-	var containerC = $("#headerMobile .searchContainer");
+	var containerC = $(".searchContainer");
 
 	// if the target of the click isn't the container nor a descendant of the container
 	if (!containerC.is(e.target) && containerC.has(e.target).length === 0) 
 	{
-	$("#headerMobile .cartContainer").removeClass("#headerMobile open");
+	$(".cartContainer").removeClass("open");
 	}
 });
