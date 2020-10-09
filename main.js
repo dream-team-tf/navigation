@@ -1,16 +1,7 @@
 $(document).ready(function() {
 
-	// $(window).resize(function() {
-	// 	if($(window).width() <= 500) {
-	// 		$('#body').hide()
-	// 		$('#mobile').show()
-	// 	} else {
-	// 		$('#body').show()
-	// 		$('#mobile').hide()
-	// 	}
-	// })
 
-	// scroll function
+	// scroll function on tablet and desktop view
 	$(window).scroll(function() {
 		if(($(window).scrollTop() >= 20) && $(window).width() > 768 ) {
 			$('header .outerContainer').addClass('headerTransition');
@@ -23,11 +14,14 @@ $(document).ready(function() {
 					$('nav').removeClass('openNav showNav');
 			});
 
-			if($('nav').hasClass('openNav') == false) {
+			// arrow button click function
+			$('.navButton').on('click', function() {
+				$('nav').toggleClass('openNav showNav');
+			});
+
+			if(!$('nav').hasClass('openNav')) {
 				$('nav').removeClass('showNav');
 				$('nav').addClass('hideNav');
-
-
 			}
 
 
@@ -45,20 +39,42 @@ $(document).ready(function() {
 
 			if( $('nav').hasClass('openNav') ) {		
 				$('nav').addClass('showNav');
-
-
 			}
 
 		}
-	})
-
-
-	// arrow button click function
-	$('.navButton').on('click', function() {
-		if($(window).scrollTop() >= 20 && $(window).width() > 768) {
-			$('nav').toggleClass('openNav showNav');
-		}
 	});
+
+
+	// mobile functions
+	if($(window).width() > 1024) {
+		$("#navSearch").click(function () {
+			$(".searchContainer").addClass("open");
+		});
+		$(document).mouseup(function(e) 
+		{
+			var containerS = $(".searchContainer");
+
+			// if the target of the click isn't the container nor a descendant of the container
+			if (!containerS.is(e.target) && containerS.has(e.target).length === 0) 
+			{
+			$(".searchContainer").removeClass("open");
+			}
+		});
+
+		$("#navCart").click(function () {
+			$(".cartContainer").addClass("open");
+		});
+		$(document).mouseup(function(e) 
+		{
+			var containerC = $(".searchContainer");
+
+			// if the target of the click isn't the container nor a descendant of the container
+			if (!containerC.is(e.target) && containerC.has(e.target).length === 0) 
+			{
+			$(".cartContainer").removeClass("open");
+			}
+		});
+	}
 
 
 
