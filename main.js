@@ -1,11 +1,11 @@
-/*$(window).scroll(function() {
-  if (($(document).scrollTop() > 116) && ($(window).width() < 768)) {
+$(window).scroll(function() {
+  if (($(document).scrollTop() > 60) && ($(window).width() < 1399)) {
     $('header').addClass('fixed');
   }
   else {
     $('header').removeClass('fixed');
   }
-});*/
+});
 
 $("#navSearch").click(function () {
 	$(".searchContainer").addClass("open");
@@ -26,7 +26,7 @@ $("#navCart").click(function () {
 });
 $(document).mouseup(function(e) 
 {
-	var containerC = $(".searchContainer");
+	var containerC = $(".cartContainer");
 
 	// if the target of the click isn't the container nor a descendant of the container
 	if (!containerC.is(e.target) && containerC.has(e.target).length === 0) 

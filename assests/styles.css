@@ -8,7 +8,7 @@ a {
 }
 
 body {
-	margin: 116px 0 0;
+	margin: 100px 0 0;
 }
 
 img {
@@ -23,54 +23,9 @@ img {
 	margin: 0 auto;
 }
 
-.flex {
-	display: flex;
-}
-
-.center {
-	justify-content: center;
-	align-items: center;
-}
-
-.column {
-	flex-direction: column;
-}
-
-figure {
-	margin: 0;
-}
-
 input {
     -webkit-border-radius:0; 
 }
-
-.w-100 {
-	width: 100%;
-}
-
-.mt-10 {
-	margin-top: 10px;
-}
-
-.mt-150 {
-	margin-top: 150px;
-}
-
-.ml-35 {
-	margin-left: 35px;
-}
-
-.logoContainer {
-	max-width: 140px;
-	max-height: 85px;
-	margin: auto 0;
-}
-
-.upperContainer {
-	justify-content: space-between;
-}
-
-
 
 input[type="search"] {
 	background: #f4f4f4;
@@ -78,13 +33,6 @@ input[type="search"] {
 	height: 30px;
 	padding: 7px;
 	width: 100%;
-}
-
-
-
-label[for="location"] {
-	margin-left: 20px;
-	margin-right: 5px;
 }
 
 select, option {
@@ -119,14 +67,10 @@ li:hover,
 	color: #ffc000;
 }
 
-
-
-
-
-
 p {
 	color: #000;
 }
+
 header {
 	background: #083776;
 	height: 60px;
@@ -194,6 +138,9 @@ header .iconContainer .fas {
 	line-height: 32px;
 	text-align: center;
 }
+header #navUser {
+	display: none;
+}
 header .cartContainer {
 	background: #fff;
 	border: 1px solid #083776;
@@ -234,24 +181,139 @@ header .cartContainer .phoneContainer a {
 	margin: 0 5px;
 	text-decoration: underline;
 }
+header .cartContainer .phoneContainer i {
+	display: none;
+}
 header select {
 	background: #fff;
 	border: 1px #083776 solid;
 	margin-top: 10px;
 }
-
-@media screen and (min-width: 425px) {
-header #navHam {
-	margin: 20px 10px 0;
+header label[for="location"] i {
+	color: #083776;
 }
-header .locationContainer {
-	margin-top: 7.5px;
-	margin-right: 20px;
+
+@media screen and (min-width: 1440px) {
+body {
+	margin: 175px 0 0;
+}
+header {
+	height: 105px;
+	left: calc(50% - 720px);
+	padding: 20px 0;
+	max-width: 1440px;
+}
+header:before {
+	background: #083776;
+	content: '';
+	height: 100%;
+	position: absolute;
+		top: 0;
+		left: -720px;
+	width: calc(100vw + 720px);
+	z-index: -1;
+}
+header #navHam {
+	position: relative;
+		top: -100px;
+}
+header .logo {
+	max-width: 170px;
+	position: relative;
+		left: -20px;
+}
+header .searchContainer {
+	display: inline-block;
+	position: relative;
+		top: -50px;
+		right: unset;
+		bottom: unset;
+	-webkit-transition: none;
+		-moz-transition: none;
+		-o-transition: none;
+		transition: none;
+	width: 400px;
+}
+header .cartContainer {
+	background: none;
+	border: none;
+	display: inline-block;
+	height: 0;
+	padding: 0;
+	position: unset;
+	-webkit-transition: none;
+		-moz-transition: none;
+		-o-transition: none;
+		transition: none;
+	width: 200px;
+}
+header .cartContainer article {
+	background: #fff;
+	border: 1px solid #083776;
+	position: absolute;
+		top: -200px;
+		right: 0;
+	-webkit-transition: all 0.3s ease;
+		-moz-transition: all 0.3s ease;
+		-o-transition: all 0.3s ease;
+		transition: all 0.3s ease;
+}
+header .cartContainer.open article {
+	top: 175px;
+}
+header .cartContainer hr {
+	display: none;
+}
+header #cartAccount {
+	display: none;
+}
+header .cartContainer .phoneContainer {
+  position: absolute;
+  	right: 5px;
+}
+header .cartContainer .phoneContainer a {
+	color: #fff;
+	display: inline-flex;
+	text-decoration: none;
+}
+header .cartContainer .phoneContainer i {
+	background: #f8df29;
+	color: #083776;
+	display: block;
+	font-size: 12px;
+	margin-right: 5px;
+	padding: 3px;
+}
+header select {
+	margin: 0;
+	position: relative;
+		top: -50px;
+}
+header label[for="location"] i {
+	color: #fff;
+	position: relative;
+		top: -50px;
 }
 header .iconContainer {
-	margin-top: 10px;
+	margin-top: 25px;
 }
-.iconContainer .fas {
-	margin-right: 20px;
+header #navSearch {
+	display: none;
+}
+header #navUser {
+	display: inline-block;
+}
+header nav {
+	position: relative;
+		top: -37px;
+		left: 210px;
+}
+header nav ul {
+	display: inline-block;
+	margin: 0;
+}
+header nav ul li {
+	display: inline-block;
+	margin: 10px;
 }
 }
